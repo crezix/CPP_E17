@@ -1,18 +1,19 @@
 #include<iostream>
 using namespace std;
 
-int main(){
-    int number;
-    int factorial=1;
-
-    cout << "Enter a number: ";
-    cin >> number;
+int factorial(int number){
+    int fact=1;
 
     for (int i = 1; i <= number;i++){
-        factorial = factorial * i;
+        fact = fact * i;
     }
 
-    cout << factorial << endl;
+    return fact;
+}
+
+int main(){
+    cout << factorial(5) << endl;
+    ;
 
     return 0;
 }
