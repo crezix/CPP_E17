@@ -13,7 +13,7 @@ int factorial(int number){
 
 int main(){
     cout << factorial(5) << endl;
-    ;
+
 
     return 0;
 }

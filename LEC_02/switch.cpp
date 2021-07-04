@@ -18,7 +18,6 @@ int main(){
 
         default:
             cout << "x is unknown" << endl;
-
         }
 
     return 0;

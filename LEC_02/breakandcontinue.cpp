@@ -17,5 +17,7 @@ int main(){
         
     }
 
+    cout << "liftoff\n";
+
     return 0;
 }

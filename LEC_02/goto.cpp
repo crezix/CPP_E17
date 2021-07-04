@@ -10,5 +10,6 @@ int main(){
         if(n>0)
             goto myLabel;
         cout << "liftoff\n";
-        return 0;
+
+    return 0;
 }

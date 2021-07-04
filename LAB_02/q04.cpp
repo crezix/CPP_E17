@@ -17,7 +17,7 @@ string getGrade(float score){
     else if(score>=80 & score<90){
         grade = "B";
     }
-    else if(score>=90 & score<100){
+    else if(score>=90 & score<=100){
         grade = "A";
     }
     else{

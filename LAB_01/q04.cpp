@@ -12,6 +12,7 @@ int main(){
     cout << "Enter the number 2: ";
     cin >> num2;
 
+    // checking the greater number
     if(num1>num2){
         cout << "Number 1 is greater than Number 2.";
     }
@@ -23,6 +24,8 @@ int main(){
     }
     cout << "\n";
 
+
+    // checking even and odd
     num1Rem = num1 % 2;
     num2Rem = num2 % 2;
 
