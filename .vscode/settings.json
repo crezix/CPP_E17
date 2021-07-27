@@ -2,6 +2,7 @@
   "files.associations": {
     "*.py": "python",
     "*.php": "php",
-    "iostream": "cpp"
+    "iostream": "cpp",
+    "ostream": "cpp"
   }
 }
