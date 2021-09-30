@@ -2,11 +2,8 @@
 using namespace std;
 
 class MyClass{
-    private:
-
     public:
         int myNum;
-
         void myMethod(){
             cout << "Hello World" << endl;
         }

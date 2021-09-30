@@ -2,7 +2,7 @@
   "files.associations": {
     "*.py": "python",
     "*.php": "php",
-    "iostream": "cpp",
-    "ostream": "cpp"
+    "*.rs": "rust",
+    "iostream": "cpp"
   }
 }

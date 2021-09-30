@@ -9,11 +9,12 @@ void factorial(int n){
 
     for (int i = 1; i < n;i++){
         fact = fact * i;
-        cout << i << setw(30) << fact << endl;
+        cout <<"  "<< i << setw(30) << fact << endl;
     }
 }
 
 int main(){
     factorial(12); //max=12
+
     return 0;
 }

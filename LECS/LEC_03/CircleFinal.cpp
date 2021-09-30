@@ -2,14 +2,6 @@
 #include<string>
 using namespace std;
 
-//What is object oriented programming?
-//What is a class?
-//What are access control modifiers?
-//What is Hiding and encapsulation?
-//What are getters and setters?
-//This keyword usage
-//Const usage
-//Member initializer list
 //Copy constructor
 
 class Circle{
@@ -18,43 +10,38 @@ class Circle{
         string color;
     
     public:
-        Circle(double r = 1.0, string c ="red"){
-            radius = r;
-            //this->radius =r;
-            color = c;
-            //this->color=c;
-        }
-
-        // ~Circle(){
-        //     cout << "Ended!" << endl;
+        // Circle(double radius = 1.0, string color ="red"){
+        //     this->radius =radius;
+        //     this->color=color;
         // }
 
         //Member initializer list
-        //Circle(double r = 1.0, string c = "red") : radius(r), color(c) { }
+        Circle(double r = 1.0, string c = "red") : radius(r), color(c) { }
 
-        //double getRadius()const{
-        double getRadius(){
+        ~Circle(){
+            cout << "Ended!" << endl;
+        }
+
+        
+
+        double getRadius()const{
             return radius;
         }
 
-        //string getColor()const{
-        string getColor(){
+        string getColor()const{
             return color;
         }
 
-        //double getArea()const{
-        double getArea(){
+        double getArea()const{
             return radius * radius * 3.1416;
         }
 
-        void setRadius(double r){
-            radius = r;
-            //this->radius=r;
+        void setRadius(double radius){
+            this->radius=radius;
         }
 
-        void setColor(string c){
-            color = c;
-            //this->color=c;
+        void setColor(string color){
+            this->color=color;
         }
 };
 
@@ -88,7 +75,7 @@ int main(){
     cout << "Area= " << c3.getArea() << endl;
     cout<< endl;
 
-    ////c4
+    //c4
     cout << "c4 Circle (Copy of c1)" << endl;
     cout << "Radius= " << c4.getRadius() << endl;
     cout << "Color= " << c4.getColor() << endl;

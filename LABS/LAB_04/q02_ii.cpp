@@ -9,20 +9,22 @@ class Student{
         double total, percentage;
     
     public:
-        Student(string name, int Reg_no,double total){
-            this->name = name;
-            this->Reg_no = Reg_no;
-            this->total = total;
-            this->percentage = ((total / 500) * 100);
+        Student(){
         }
 
-        string getDetails();
+        void getDetails();
         void displayDetails();
 };
 
-string Student::getDetails(){
-    string details = "Name:" + name +"\nRegistration Number: "+to_string(Reg_no)+"\nTotal: "+to_string(total)+"\nPercentage: "+to_string(percentage);
-    return details;
+void Student::getDetails(){
+            cout << "Enter name: ";
+            getline(cin, this->name);
+            cout<< "Enter registration number: ";
+            cin >> this->Reg_no;
+            cout << "Enter total: ";
+            cin >> this->total;
+
+            this->percentage = ((this->total / 500) * 100);
 }
 
 void Student::displayDetails(){
@@ -30,7 +32,7 @@ void Student::displayDetails(){
 }
 
 int main(){
-    Student student("Iresh", 63, 251);
-    cout << student.getDetails() << endl<<endl;
+    Student student;
+    student.getDetails();
     student.displayDetails();
 }
