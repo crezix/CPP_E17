@@ -3,6 +3,8 @@
     "*.py": "python",
     "*.php": "php",
     "*.rs": "rust",
-    "iostream": "cpp"
-  }
+    "iostream": "cpp",
+    "*.tcc": "cpp"
+  },
+  "C_Cpp.errorSquiggles": "Enabled"
 }
