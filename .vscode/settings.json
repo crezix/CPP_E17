@@ -4,7 +4,9 @@
     "*.php": "php",
     "*.rs": "rust",
     "iostream": "cpp",
-    "*.tcc": "cpp"
+    "*.tcc": "cpp",
+    "queue": "cpp",
+    "ostream": "cpp"
   },
   "C_Cpp.errorSquiggles": "Enabled"
 }
