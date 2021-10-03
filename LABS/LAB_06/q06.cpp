@@ -4,15 +4,23 @@ using namespace std;
 
 
 class Student{
-    protected:
+    private:
         int rollno;
         string name;
     
     public:
-        Student(int rollno,string name){
-            this->rollno= rollno;
-            this->name = name;
-        } //This can be altered by a data setting function.
+        // Student(int rollno,string name){
+        //     this->rollno= rollno;
+        //     this->name = name;
+        // } //This can be altered by a data setting function.
+
+        void getData(){
+            cout << "Enter roll number: ";
+            cin >> rollno;
+            cin.ignore();
+            cout << "Enter name: ";
+            getline(cin, name);
+        }
 
         void display(){
             cout << "Roll Number: "<<rollno<< "\nName of the student: " << name << endl;
@@ -24,9 +32,9 @@ class Exam:public Student{
         int marks[6];
 
     public:
-        Exam(int rollno,string name):Student(rollno,name){
+        // Exam(int rollno,string name):Student(rollno,name){
             
-        }
+        // }
 
         void getMarks(){
             string subjects[6] =  {"Maths","Science","First Language","Second Language", "English", "IT"};
@@ -51,12 +59,12 @@ class Result:public Exam{
         int totalMarks;
     
     public:
-        Result(int rollno,string name):Exam(rollno,name){
-            totalMarks = 0;
-        }
+        // Result(int rollno,string name):Exam(rollno,name){
+        //     totalMarks = 0;
+        // }
 
         void calculate(){
-            
+            totalMarks = 0;
             for (int i = 0; i < 6; i++)
             {
                 totalMarks += marks[i];
@@ -70,7 +78,8 @@ class Result:public Exam{
 };
 
 int main(){
-    Result result(1, "Kamal");
+    Result result;
+    result.getData();
     result.getMarks();
     result.calculate();
     result.display();

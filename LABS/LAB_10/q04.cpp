@@ -88,4 +88,4 @@ int main(){
     return 0;
 }
 
-//When a link list is circular there will be no NULL end to stop ant iteration will run infinitely
+//When a link list is circular there will be no NULL end to stop and iteration will run infinitely

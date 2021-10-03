@@ -10,12 +10,12 @@ int main(){
     int *pB = &b;
     char *pC = &c;
 
-    cout << "Address of variable a: " << &a << endl;
+    cout << "Address of variable a: " << &a << endl; /////x
     cout << "Value of variable a: " << a << endl;
     cout << "memory size of variable a: " << sizeof(a) << endl
          << endl;
-    cout << "Address of variable pA: " << &pA << endl;
-    cout << "Value of variable pA: " << pA << endl;
+    cout << "Address of variable pA: " << &pA << endl; 
+    cout << "Value of variable pA: " << pA << endl; /////x
     cout << "memory size of variable pA: " << sizeof(pA) << endl
          << endl;
     cout << "Address of variable b: " << &b << endl;

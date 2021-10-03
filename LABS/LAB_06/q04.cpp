@@ -44,14 +44,14 @@ class Tape:public Publication{
 
     public:
         void getData(){
-            Publication::getData(); //calling the base class function inside the overidden function
+            //Publication::getData(); //calling the base class function inside the overidden function
             cout << "Enter the playing time in minutes: ";
             cin >> playingTime;
             cin.ignore();
         }
 
         void putData(){
-            Publication::putData(); //calling the base class function inside the overidden function
+            //Publication::putData(); //calling the base class function inside the overidden function
             cout << "Playing Time: " << playingTime<<" minutes" << endl;
         }
 };
@@ -60,11 +60,13 @@ int main(){
     Book book;
     Tape tape;
 
+    //book.Publication::getData();
     book.getData();
+    //book.Publication::putData();
     book.putData();
 
-    tape.getData();
-    tape.putData();
+    //tape.getData();
+    //tape.putData();
 
     return 0;
 }

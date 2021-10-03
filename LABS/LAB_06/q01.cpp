@@ -6,6 +6,7 @@ class Triangle{
         void triangle(){
             cout << "This is Triangle Base Class" << endl;
         }
+        
 };
 
 class Isosceles:public Triangle{

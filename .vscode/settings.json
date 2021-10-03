@@ -6,7 +6,8 @@
     "iostream": "cpp",
     "*.tcc": "cpp",
     "queue": "cpp",
-    "ostream": "cpp"
+    "ostream": "cpp",
+    "iosfwd": "cpp"
   },
   "C_Cpp.errorSquiggles": "Enabled"
 }

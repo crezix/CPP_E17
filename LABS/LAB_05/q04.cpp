@@ -19,17 +19,17 @@ class Time{
         }
 
         Time addTime(Time timeOne, Time timeTwo){
+            //(1,20,40) (3,50,30)
+            int addedSeconds = timeOne.seconds + timeTwo.seconds; //70
+            int addedMinutes = timeOne.minutes + timeTwo.minutes; //70
+            int addedHours = timeOne.hours + timeTwo.hours; //4
 
-            int addedSeconds = timeOne.seconds + timeTwo.seconds;
-            int addedMinutes = timeOne.minutes + timeTwo.minutes;
-            int addedHours = timeOne.hours + timeTwo.hours;
-
-            while(addedSeconds>60){
-                addedSeconds -= 60;
-                addedMinutes += 1;
+            if(addedSeconds>60){
+                addedSeconds -= 60; //10
+                addedMinutes += 1; //71
             }
             
-            while(addedMinutes>60){
+            if(addedMinutes>60){
                 
                 addedMinutes -= 60;
                 addedHours += 1;
@@ -46,8 +46,8 @@ class Time{
 };
 
 int main(){
-    const Time time1= Time(1,20,40);
-    const Time time2= Time(3,50,30);
+    const Time time1(1,20,40);
+    const Time time2(3,50,30);  //5:11:10
     Time time3;
 
     time3.display();

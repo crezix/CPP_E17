@@ -18,7 +18,6 @@ void insertAtFront(Node *node,int data){
 }
 
 void deleteElement(Node *node,int pos){
-    Node *before = node;
     Node *positioned = node->next;
 
     if(pos==0){
@@ -27,14 +26,13 @@ void deleteElement(Node *node,int pos){
         }
     else{
         for (int i = 0; i < pos-1; i++){
-            before = positioned;
             if(positioned->next!=NULL){
                 positioned = positioned->next;
             }
-            
+            node = node->next;
         }
 
-        before->next = positioned->next;
+        node->next = positioned->next;
     }
 }
 
@@ -66,7 +64,7 @@ int main(){
     insertAtFront(head,2);
     insertAtFront(head,1);
 
-    //head->deleteElement(1);
+    deleteElement(head,3);
 
     display(head);
     count(head);
