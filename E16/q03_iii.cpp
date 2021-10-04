@@ -21,6 +21,5 @@ int main(){
     int oldArr[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
     int *newArr = evenArray(oldArr, 10);
 
-
     return 0;
 }

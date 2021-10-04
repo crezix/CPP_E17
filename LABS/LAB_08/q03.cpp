@@ -3,6 +3,8 @@
 #include<string>
 using namespace std;
 
+// Write a program to copy the contents of a file into another file.
+
 int main(){
     string line;
 

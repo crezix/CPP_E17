@@ -3,10 +3,13 @@
 #include<string>
 using namespace std;
 
+// Write a program to read a set of lines from the keyboard and to store it on a specified file.
+
 int main(){
     string line;
 
     ofstream myFile;
+
     myFile.open("q01.txt");
 
     if(myFile.is_open()){
@@ -21,7 +24,7 @@ int main(){
             myFile << line << endl;
         }
     }else{
-        cout << "File is not opened\n";
+         cout << "File is not opened\n";
     }
 
     return 0;

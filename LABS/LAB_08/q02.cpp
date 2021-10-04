@@ -3,10 +3,12 @@
 #include<string>
 using namespace std;
 
+// Write a program to read a text file and display its contents on the screen.
+
 int main(){
     string line;
 
-    ifstream myFile;
+    fstream myFile;
     myFile.open("q01.txt");
 
     if(myFile.is_open()){
@@ -15,7 +17,6 @@ int main(){
             getline(myFile, line);
             cout << line << endl;
         }
-        myFile.close();
     }
     else
     {
